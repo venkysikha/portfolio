@@ -1,5 +1,5 @@
 
-import image from './venky.jpeg'
+import image from './Venky.jpeg'
 function Home(props)
 {
     const StyleFirst=

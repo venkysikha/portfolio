@@ -3,7 +3,7 @@ import {
   } from "react-router-dom";
 import React,{useState} from "react";
 import './Navbar.css';
-import venky from './iconss/venky.png';
+import venky from './iconss/venkat.png';
 function Navbar()
 {
   const [darkMode, setDarkMode] = useState(true);

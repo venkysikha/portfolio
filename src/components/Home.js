@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import venky from './Venky.jpeg';
+import venky from './venky.jpeg';
 import './Home.css';
 import shake from './iconss/waving.svg';
 import avatar from './iconss/avatar.svg';

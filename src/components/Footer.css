@@ -1,0 +1,21 @@
+.foot
+{
+    min-height: 200px;
+    background-color: rgba(14, 19, 77, 0.427);
+    position:relative;
+}
+.list
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.list-item
+{
+    margin:0 30px;
+    padding:30px;
+    margin-top: 50px;
+    
+}

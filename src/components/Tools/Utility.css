@@ -1,0 +1,10 @@
+.tech-icons
+{
+    box-shadow: 1px 4px 5px rgb(239, 206, 239);
+    border-radius: 4px;
+    margin:5px;
+}
+.tech-icons:hover{
+    transform: scale(0.8);
+    box-shadow: 1px 4px 4px rgb(32, 10, 93);
+}

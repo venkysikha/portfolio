@@ -1,5 +1,6 @@
 import inotebook from './iconss/inotebook.png';
 import todo from './iconss/toDoList.png';
+import './Project.css'
 function Project() {
   return (
     <>
@@ -35,7 +36,6 @@ function Project() {
                 </div>
         </div>
         </div>
-        <div className="col col-md-4"></div>
       </div>
     </div>
     </>

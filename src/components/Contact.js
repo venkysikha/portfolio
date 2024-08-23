@@ -3,10 +3,13 @@ function Contact()
 {
     return(
         <>
+
             <h2 className="text-center my-3">Contact Me</h2>
             <div className='container'>
+            <form action="https://api.web3forms.com/submit" method="POST">
             <div className="contact">
                 <div className='details'>
+                <input type="hidden" name="access_key" value="126dc8cf-366f-4bc5-a0df-82dccec988be"/>
                 <label className="labell my-3" htmlFor="name">Name:</label>
                 <input  type="text" id="name" name="name" placeholder="enter your name" required/>
                 </div>
@@ -22,6 +25,7 @@ function Contact()
                    <button className='btn btn-primary my-4'>submit</button>
                 </div>
                 </div>
+                </form>
             </div>
         </>
      )

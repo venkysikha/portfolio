@@ -1,27 +1,29 @@
+/* Basic Navbar Styling */
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensure it stays on top of other elements */
-    width: 100%; /* Ensures it spans the entire width of the page */
-    transition: background-color 0.3s ease; /* Smooth transition for background color changes */
-  }
-.nav-item:hover
-{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  width: 100%; /* Ensures it spans the entire width of the page */
+  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+}
+
+.nav-item:hover {
   transform: scale(0.85);
   box-shadow: 1px 4px 10px rgb(239, 206, 239);
   border-radius: 4px;
 }
+
 div.navbar-collapse ul.navbar-nav li {
   color: #E69D32;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
 }
 
-/* Add this to your Navbar.css file */
-
+/* Mode Button Styling */
 .mode-btn {
   background-color: rgba(61, 61, 222, 0.468); /* Slightly lighter shade than navbar */
   color: white;
@@ -36,5 +38,63 @@ div.navbar-collapse ul.navbar-nav li {
   cursor: pointer;
   transform: scale(0.85);
   box-shadow: 1px 4px 10px rgb(239, 206, 239);
+}
 
+/* Mobile Navbar Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+      padding: 10px;
+  }
+  
+  .navbar-collapse {
+      padding-right: 15px;
+  }
+
+  .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+  }
+
+  .nav-item {
+      margin: 0 auto;
+  }
+
+  .mode-btn-mobile {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px 0;
+      background-color: rgba(61, 61, 222, 0.468);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+
+  .mode-btn-mobile:hover {
+      background-color: rgba(87, 87, 150, 0.653);
+      cursor: pointer;
+      transform: scale(0.85);
+      box-shadow: 1px 4px 10px rgb(239, 206, 239);
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+      padding: 8px;
+  }
+
+  .nav-item {
+      font-size: 18px;
+      margin: 10px 0;
+  }
+
+  .mode-btn {
+      padding: 12px;
+      font-size: 16px;
+  }
+
+  .navbar-collapse {
+      margin-right: 0; /* Remove any right margin */
+  }
 }

@@ -47,3 +47,44 @@ section{
 {
     margin:20px;
 }
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    section {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .first {
+      width: 100%;
+      margin-top: 50px;
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .second {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .second img {
+      height: auto;
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .skillset,
+    .techstack,
+    .toolstack {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .toolstack h1 {
+      margin: 10px;
+      font-size: 24px;
+    }
+  }
+  

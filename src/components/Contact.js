@@ -8,12 +8,12 @@ function Contact()
             <div className='container'>
             <form action="https://api.web3forms.com/submit" method="POST">
             <div className="contact">
+            <input type="hidden" name="access_key" value="126dc8cf-366f-4bc5-a0df-82dccec988be"/>
                 <div className='details'>
-                <input type="hidden" name="access_key" value="126dc8cf-366f-4bc5-a0df-82dccec988be"/>
                 <label className="labell my-3" htmlFor="name">Name:</label>
                 <input  type="text" id="name" name="name" placeholder="enter your name" required/>
                 </div>
-                <div>
+                <div className='mailDetails'>
                 <label className="mail labell my-3" htmlFor="mail">Email</label>
                 <input type="email" id="mail" name="mail" placeholder="enter your email adderess" required/>
                 </div>

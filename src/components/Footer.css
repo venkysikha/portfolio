@@ -1,6 +1,6 @@
 .foot
 {
-    min-height: 200px;
+    min-height: 150px;
     background-color: rgba(14, 19, 77, 0.427);
     position:relative;
 }
@@ -14,8 +14,32 @@
 }
 .list-item
 {
-    margin:0 30px;
-    padding:30px;
-    margin-top: 50px;
+    margin: 20px 60px 0;
+    margin-top: 40px;
     
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .list-item {
+        margin: 10px 20px 0; /* Reduce margin for smaller screens */
+    }
+
+    .text-center {
+        font-size: 16px; /* Smaller font size for text on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .list {
+        flex-direction: column; /* Stack icons vertically on very small screens */
+    }
+
+    .list-item {
+        margin: 10px 0; /* Further reduce margin for very small screens */
+    }
+
+    .text-center {
+        font-size: 14px; /* Even smaller font size */
+    }
 }

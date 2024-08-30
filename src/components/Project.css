@@ -29,3 +29,30 @@
     border-radius: 10px;
     box-shadow: 2px 3px 4px rgb(25, 21, 29);
 }
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add space between cards */
+    }
+
+    .row {
+        flex-direction: column; /* Stack cards vertically */
+        padding: 5px; /* Reduce padding on smaller screens */
+    }
+
+    .card img {
+        height: auto;
+        width: 100%; /* Ensure images are responsive */
+    }
+
+    .card-body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .card-body .btn {
+        font-size: 16px; /* Adjust button size */
+    }
+}

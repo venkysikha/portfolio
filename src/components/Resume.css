@@ -1,0 +1,21 @@
+@media (max-width: 576px) {
+    .project {
+      padding: 20px;
+    }
+  
+    .heading{
+      margin-bottom: 120px; /* Increase space below heading */
+      font-size: 24px;
+    }
+  
+    .image{
+      margin-top: 100px; /* Increase space above the image */
+    }
+  
+    .link{
+      margin-top: 30px; /* Increase space above the button */
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  
